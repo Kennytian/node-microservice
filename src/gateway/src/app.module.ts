@@ -12,7 +12,7 @@ import {
   USER_SERVICE, taskService,
   tokenService,
   userService
-} from "@project/constants";
+} from "./constants";
 
 @Module({
   imports: [],

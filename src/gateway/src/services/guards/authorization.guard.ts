@@ -8,7 +8,7 @@ import {
 import { Reflector } from '@nestjs/core';
 import { ClientProxy } from '@nestjs/microservices';
 import { firstValueFrom } from 'rxjs';
-import { TOKEN_SERVICE, USER_SERVICE, user_get_by_id } from "@project/constants";
+import { TOKEN_SERVICE, USER_SERVICE, user_get_by_id } from "../../constants";
 
 @Injectable()
 export class AuthGuard implements CanActivate {

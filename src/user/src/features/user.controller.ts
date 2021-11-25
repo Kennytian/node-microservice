@@ -3,7 +3,7 @@ import { MessagePattern } from '@nestjs/microservices';
 import { UserService } from '../services/user.service';
 import { IUser } from '../interfaces/user.interface';
 import { IUserCreateResponse } from '../interfaces/user-create-response.interface';
-import { user_create, user_get_by_id } from "@project/constants";
+import { user_create, user_get_by_id } from "../constants";
 
 @Controller()
 export class UserController {

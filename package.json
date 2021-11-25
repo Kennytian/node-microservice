@@ -4,6 +4,7 @@
   "description": "a wow microservice with node.js",
   "author": "Kenny Tian",
   "scripts": {
+    "setup": "pnpm i",
     "clean-node_modules": "rm -rf node_modules **/*/node_modules",
     "clean-dist": "pnpm -C ./src/user clean-dist & pnpm -C ./src/gateway clean-dist",
     "start": "pnpm -C ./src/user start:dev & pnpm -C ./src/gateway start:dev"

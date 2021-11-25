@@ -48,12 +48,10 @@ importers:
   src/gateway:
     specifiers:
       '@nestjs/swagger': ^5.1.5
-      '@project/constants': workspace:^1.0.0
       swagger-ui-express: ^4.1.6
       tsc-watch: 4.2.9
     dependencies:
       '@nestjs/swagger': 5.1.5_08c544b790b5e322bb5957f7dba6e260
-      '@project/constants': link:../constants
       swagger-ui-express: 4.1.6
     devDependencies:
       tsc-watch: 4.2.9_typescript@4.5.2
@@ -61,14 +59,12 @@ importers:
   src/user:
     specifiers:
       '@nestjs/mongoose': ^9.0.1
-      '@project/constants': workspace:^1.0.0
       '@project/utils': workspace:^1.0.1
       bcrypt: ^5.0.1
       mongoose: ^6.0.2
       tsc-watch: 4.2.9
     dependencies:
       '@nestjs/mongoose': 9.0.1_be551b4d7eb750421b94cbe93afa9521
-      '@project/constants': link:../constants
       '@project/utils': link:../utils
       bcrypt: 5.0.1
       mongoose: 6.0.13

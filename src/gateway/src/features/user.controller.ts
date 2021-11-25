@@ -18,7 +18,7 @@ import { ConfirmUserDto } from "../interfaces/user/dto/confirm-user.dto";
 import { IServiceUserConfirmResponse } from "../interfaces/user/service-user-confirm-response.interface";
 import { UserIdDto } from "../interfaces/user/dto/user-id.dto";
 import { GetUserByIdResponseDto } from "../interfaces/user/dto/get-user-by-id-response.dto";
-import { TOKEN_SERVICE, USER_SERVICE, user_create, user_get_by_id } from "@project/constants";
+import { TOKEN_SERVICE, USER_SERVICE, user_create, user_get_by_id } from "../constants";
 
 @Controller("users")
 @ApiTags("users")

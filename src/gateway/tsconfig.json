@@ -12,7 +12,5 @@
     "incremental": true,
     "skipLibCheck": true
   },
-  "include": ["../constants/*"],
-  "references": [{"path": "../constants"}],
   "exclude": ["node_modules", "dist"]
 }
