@@ -1,0 +1,25 @@
+{
+  "name": "@project/user",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "build": "rimraf dist && tsc -p tsconfig.build.json",
+    "clean-dist": "rimraf dist",
+    "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node -r dotenv/config dist/main.js dotenv_config_path=../../.env\"",
+    "start:test": "tsc-watch -p tsconfig.build.json --onSuccess \"node -r dotenv/config dist/main.js dotenv_config_path=../../.env.test\"",
+    "start:prod": "node dist/main.js",
+    "lint": "eslint \"src/**/*.ts\" --fix"
+  },
+  "dependencies": {
+    "@nestjs/mongoose": "^9.0.1",
+    "@project/constants": "workspace:^1.0.0",
+    "@project/utils": "workspace:^1.0.1",
+    "bcrypt": "^5.0.1",
+    "mongoose": "^6.0.2"
+  },
+  "devDependencies": {
+    "tsc-watch": "4.2.9"
+  }
+}
